@@ -1,11 +1,13 @@
 def main():
-    kilogram = input("Enter a weight in Kg to be converted into lbs...")
+    try:
+        kilogram = float(input("Enter a weight in Kg to be converted into lbs..."))
 
-    kilogram = float(kilogram)
+        pounds = kilogram * 2.20462
 
-    pounds = kilogram * 2.20462
+        print(f"{kilogram}kg is equal to {pounds:.2f} in pounds(lbs)")
 
-    print(f"{kilogram}kg is equal to {pounds} in pounds(lbs)")
+    except ValueError:
+        print("Please enter a valid number...")
 
 if __name__ == '__main__':
     main()
