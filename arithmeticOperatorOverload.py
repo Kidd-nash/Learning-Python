@@ -1,8 +1,8 @@
 def main():
-    first_input = input("Enter your first number...")
-    second_input = input("Enter your second number...")
+    first_input = float(input("Enter your first number: "))
+    second_input = float(input("Enter your second number: "))
 
-    sum = first_input + second_input
+    result_sum = first_input + second_input
     difference = first_input - second_input
     product = first_input * second_input
     quotient = first_input / second_input
@@ -10,9 +10,16 @@ def main():
     floor_quotient = first_input // second_input
     remainder = first_input % second_input
 
-    print(f"You entered {first_input} as your first number and {second_input} as your second number")
-    print(f"in which the sum is equal to {sum}, difference is equal to {difference}, product is equal to {product}, quotient is equal to {quotient}, power is equal to {power}, floor quotient is equal
-    {floor quotient}, and last the remainder from its quotient {remainder}")
+    print(f"You entered {first_input:.2f} as your first number and {second_input:.2f} as your second number.")
+    print(
+        f"The sum is {result_sum:.2f}, "
+        f"difference is {difference:.2f}, "
+        f"product is {product:.2f}, "
+        f"quotient is {quotient:.2f}, "
+        f"power is {power:.2f}, "
+        f"floor quotient is {floor_quotient:.2f}, "
+        f"and remainder is {remainder:.2f}."
+    )
 
-if __name__ == '__main__'
+if __name__ == '__main__':
     main()
