@@ -5,8 +5,10 @@ def main():
 
     if first_value == second_value:
         print(f"{first_value} is equal to {second_value}")
-    else:
+    elif first_value != second_value:
         print(f"{first_value} is not equal to {second_value}")
+    else:
+        print(f"{first_value} else un {second_value}")
 
 if __name__ == '__main__':
     main()
