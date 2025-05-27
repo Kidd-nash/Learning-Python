@@ -5,6 +5,10 @@ def main():
 
     if first_value == second_value:
         print(f"{first_value} is equal to {second_value}")
+    elif first_value > second_value:
+        print(f"{first_value} is greater than {second_value}")
+    elif first_value < second_value:
+        print(f"{first_value} is less than {second_value}")
     elif first_value != second_value:
         print(f"{first_value} is not equal to {second_value}")
     else:
